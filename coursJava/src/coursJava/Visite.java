@@ -1,8 +1,8 @@
 package coursJava;
-import tools.*;
+import tools.MesDates;
 /**
  * 
- * @author BurstRun
+ * @author gnorgol
  *
  */
 public class Visite {

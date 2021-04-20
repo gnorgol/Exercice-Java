@@ -1,14 +1,26 @@
 package tools;
-
+/**
+ * 
+ * @author gnorgol
+ *
+ */
 public class MesDates {
 
 	String date;
-	
+	/**
+	 * Permet de convertir la date FR en US
+	 * 
+	 * @param date
+	 */
 	public MesDates(String date) 
 	 {
 		 this.date = date;
 		 
 	 }
+	/**
+	 * 
+	 * @return
+	 */
 	public String dateFRtoUS() {
 		
 		String [] test = this.date.split("/");
@@ -19,8 +31,11 @@ public class MesDates {
 		DateUS = mois + "/" + jour + "/" + annee ;
 		return DateUS;
 	}
-	
-	public String dateUStoFR() {
+	/**
+	 * Permet de convertir la date US en FR
+	 * @return
+	 */
+	public String dateUStoFR() { 
 		
 		String [] test = this.date.split("/");
 		String jour,mois,annee,DateFR;
